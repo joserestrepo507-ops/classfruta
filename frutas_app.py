@@ -19,13 +19,14 @@ st.write("Vector de tu fruta:", fruta_usuario)
 manzana = [170, 7.0, 7]
 banano = [120, 5.0, 9]
 naranja = [200, 8.0, 6]
+pera = [178, 6.5, 6]
 
 # Calculamos las distancias
 
 distancia_manzana = math.sqrt(
     (fruta_usuario[0] - manzana[0])**2 +
     (fruta_usuario[1] - manzana[1])**2 +
-    (fruta_usuario[2] - manzana[2])**2
+    (fruta_usuario[2] - manzana[2])**2 
 )
 
 distancia_banano = math.sqrt(
@@ -46,12 +47,14 @@ st.subheader("Distancias")
 st.write("🍎 Manzana:", distancia_manzana)
 st.write("🍌 Banano:", distancia_banano)
 st.write("🍊 Naranja:", distancia_naranja)
+st.write("🍐 Pera: ", distancia_pera)
 
 # Buscamos la distancia menor
 distancias = {
     "🍎 Manzana": distancia_manzana,
     "🍌 Banano": distancia_banano,
-    "🍊 Naranja": distancia_naranja
+    "🍊 Naranja": distancia_naranja,
+    "🍐 Pera ": distancia_pera
 }
 
 fruta_mas_parecida = min(distancias, key=distancias.get)

@@ -57,7 +57,6 @@ imagenes = {
 }
 
 columnas = st.columns(4)
-
 for col, (nombre, dist) in zip(columnas, distancias.items()):
     with col:
         st.image(imagenes[nombre], width=80)

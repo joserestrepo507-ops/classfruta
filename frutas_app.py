@@ -50,10 +50,10 @@ distancia_pera = math.sqrt(
 #imagenes 
 
 imagenes = {
-    "Manzana": "images/manzana.jpg",
-    "Banano": "images/banano.jpg",
-    "Naranja": "images/naranja.jpg",
-    "Pera": "images/pera.jpg",
+    "Manzana": "manzana.jpg",
+    "Banano": "banano.jpg",
+    "Naranja": "naranja.jpg",
+    "Pera": "pera.jpg",
 }
 
 columnas = st.columns(4)

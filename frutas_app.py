@@ -46,6 +46,27 @@ distancia_pera = math.sqrt(
     (fruta_usuario[1] - pera[1])**2 +
     (fruta_usuario[2] - pera[2])**2
 )
+
+#imagenes 
+
+imagenes = {
+    "Manzana": "images/manzana.jpg",
+    "Banano": "images/banano.jpg",
+    "Naranja": "images/naranja.jpg",
+    "Pera": "images/pera.jpg",
+}
+
+columnas = st.columns(4)
+
+for col, (nombre, dist) in zip(columnas, distancias.items()):
+    with col:
+        st.image(imagenes[nombre], width=80)
+        if nombre == fruta_mas_parecida:
+            st.markdown(f"**{nombre}** 🏆")
+        else:
+            st.markdown(f"**{nombre}**")
+        st.metric(label="Distancia", value=f"{dist:.2f}")
+
 # Mostramos las distancias
 st.subheader("Distancias")
 

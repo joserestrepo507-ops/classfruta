@@ -63,8 +63,18 @@ distancias = {
     "🍐 Pera ": distancia_pera
 }
 
+# Mapeo de cada fruta a su imagen en el repo
+imagenes = {
+    "🍎 Manzana": "manzana.jpg",
+    "🍌 Banano": "banano.jpg",
+    "🍊 Naranja": "naranja.jpg",
+    "🍐 Pera ": "pera.jpg"
+}
+
 fruta_mas_parecida = min(distancias, key=distancias.get)
 
 st.subheader("Resultado")
-
 st.success(f"La fruta más parecida es: {fruta_mas_parecida}")
+
+# Mostramos la imagen correspondiente
+st.image(imagenes[fruta_mas_parecida], caption=fruta_mas_parecida, width=250)

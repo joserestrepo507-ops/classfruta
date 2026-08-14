@@ -78,10 +78,10 @@ st.success(f"La fruta más parecida es: {fruta_mas_parecida}")
 
 # Descripciones de cada fruta
 descripciones = {
-    "🍎 Manzana": "Fruta crujiente y jugosa, de sabor entre dulce y ácido. Rica en fibra y vitamina C.",
-    "🍌 Banano": "Fruta suave y muy dulce, excelente fuente de potasio y energía rápida.",
-    "🍊 Naranja": "Cítrico jugoso y refrescante, conocido por su alto contenido de vitamina C.",
-    "🍐 Pera ": "Fruta suave y dulce, con un toque ligeramente ácido y alto contenido de fibra."
+    "Manzana": "Fruta crujiente y jugosa, de sabor entre dulce y ácido. Rica en fibra y vitamina C.",
+    "Banano": "Fruta suave y muy dulce, excelente fuente de potasio y energía rápida.",
+    "Naranja": "Cítrico jugoso y refrescante, conocido por su alto contenido de vitamina C.",
+    "Pera ": "Fruta suave y dulce, con un toque ligeramente ácido y alto contenido de fibra."
 }
 
 # Mostramos la imagen correspondiente

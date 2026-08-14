@@ -90,8 +90,7 @@ with col2:
     st.image(imagenes[fruta_mas_parecida], caption=fruta_mas_parecida, width=250)
 
 # Tarjeta con nombre y descripción
-nombre_fruta = fruta_mas_parecida.strip().split(" ", 1)[-1]  # quita el emoji
-
+nombre_fruta = fruta_mas_parecida.strip().split(" ", 1)[-1] 
 st.markdown(
     f"""
     <div style="

@@ -77,6 +77,4 @@ st.subheader("Resultado")
 st.success(f"La fruta más parecida es: {fruta_mas_parecida}")
 
 # Mostramos la imagen correspondiente, centrada
-col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
-    st.image(imagenes[fruta_mas_parecida], caption=fruta_mas_parecida, width=250)
+st.image(imagenes[fruta_mas_parecida], caption=fruta_mas_parecida, width=250) 
